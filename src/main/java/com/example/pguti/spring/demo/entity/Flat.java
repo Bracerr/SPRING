@@ -3,11 +3,13 @@ package com.example.pguti.spring.demo.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.context.annotation.Scope;
 
 @Entity
 @Data
 @AllArgsConstructor
 @Table(name = "flats")
+//@Scope("prototype")
 public class Flat {
     private final static int DEFAULT_SQUARE = 50;
     private final static int DEFAULT_QUANTITY = 2;
